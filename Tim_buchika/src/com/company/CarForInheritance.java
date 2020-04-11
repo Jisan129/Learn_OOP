@@ -1,10 +1,10 @@
 package com.company;
 
-public class Car extends Vehicle {
+public class CarForInheritance extends Vehicle {
     String model;
 
 
-    public Car(int speed, String model) {
+    public CarForInheritance(int speed, String model) {
         super(speed);
         this.model = model;
     }
