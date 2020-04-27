@@ -22,6 +22,7 @@ public class House {
         return windows;
     }
 
+
     public Doors getDoor() {
         return door;
     }

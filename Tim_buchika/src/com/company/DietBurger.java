@@ -1,6 +1,6 @@
 package com.company;
 
-public class DietBurger extends HamBurger {
+public class DietBurger extends HamBurger implements DietBurger2 {
 
     public DietBurger(int meatSize, int price) {
         super("Rye", meatSize, price);
@@ -16,7 +16,7 @@ public class DietBurger extends HamBurger {
         return super.getMeatSize();
     }
 
-    @Override
+
     public void additionalItem(boolean lettuce, boolean tomato, boolean carrot, boolean cheese, boolean drinks) {
         super.additionalItem(lettuce, tomato, carrot, cheese);
         if (drinks) {
