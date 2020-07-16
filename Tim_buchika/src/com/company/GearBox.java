@@ -2,21 +2,25 @@ package com.company;
 
 import java.util.ArrayList;
 
-class GearBox{
+class GearBox {
     private int currentGear;
+    public static final String test = "hello";
     ArrayList<Gear> gears;
+    static boolean i_m_here = true;
     private boolean clutch;
 
     public GearBox(int currentGear) {
         this.currentGear = currentGear;
-        this.gears=new ArrayList<Gear>();
-        Gear Neural=new Gear(0,0.0);
-        this.clutch=false;
+        this.gears = new ArrayList<Gear>();
+        Gear Neural = new Gear(0, 0.0);
+        this.clutch = false;
     }
 
+    private static boolean getGears() {
+        return i_m_here;
+    }
 
-
-    public class Gear{
+    public static class Gear {
         private int gearNumber;
         private double ratio;
 
@@ -39,10 +43,10 @@ class GearBox{
 
         public void setRatio(double ratio) {
             this.ratio = ratio;
-       }
+        }
 
-       public double revolution(){
-            return gearNumber*(this.ratio);
-       }
+        public double revolution() {
+            return gearNumber * (this.ratio);
+        }
     }
 }
